@@ -1,16 +1,17 @@
-# File: HW8
+# File: Shopping Cart
 # Author: Cameron Cox
 # UT EID: cpc2526
 # Course: cs303E
 
 # Description of program: 
 # Creates 2 classes, one for items and one for a 'cart' of item objects. 
-# Then uses the class methods to demonstrate the capabilities of the class
+# Then uses the class methods to demonstrate the capabilities of the classes
 
 
 
 import random
 
+# Item Class
 class Item_To_Purchase:
 
     def __init__(self, name, price, quantity):
@@ -50,7 +51,10 @@ class Item_To_Purchase:
         :return: String. formatted f string with all the information of an item. 
         """ 
         return (f'{self.name}: {self.__quantity} @ ${self.price:.2f} = ${self.__quantity * self.price:.2f}')
-    
+
+
+
+ # Shopping Cart classs   
 class Shopping_Cart:
 
     def __init__(self, customer_ID):
